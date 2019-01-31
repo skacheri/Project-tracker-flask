@@ -1,0 +1,20 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <title>Project display</title>
+</head>
+
+<body>
+    <h3>Project title: {{ title }}</h3>
+    <p>
+        <b>Description: {{ description }}</b><br>
+        <b>max_grade for project: {{ max_grade }}</b><br><br>
+        {% for student_grade in new_grades_list %}
+            first name:{{ student_grade[0] }} last name: {{ student_grade[1] }}, 
+            student got a grade of: {{ student_grade[2] }} <br>
+        {% endfor %}
+    </p>
+
+
+</body>
+</html>
